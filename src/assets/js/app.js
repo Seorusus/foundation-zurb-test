@@ -10,3 +10,12 @@ import Foundation from 'foundation-sites';
 
 
 $(document).foundation();
+
+//Emplement fade in 'Share it'  block
+$(document).ready(function(){
+    $(".search-toggle").click(function(){
+        $("#searchCollapse").slideToggle("slow");
+        $(this).toggleClass("active");
+		return false;
+    });
+});
